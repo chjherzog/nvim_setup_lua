@@ -77,7 +77,11 @@ return packer.startup(function(use)
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
   use "p00f/nvim-ts-rainbow"
-
+  -- NVimTree
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
   -- Gitsigns
   use "lewis6991/gitsigns.nvim"
   if PACKER_BOOTSTRAP then

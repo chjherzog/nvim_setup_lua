@@ -84,3 +84,8 @@ keymap("n", "<leader>fb", "<CMD>Telescope current_buffer_fuzzy_find<CR>", opts)
 keymap("n", "<leader>gb", "<CMD>Telescope git_branches<CR>", opts)
 
 -- Gitsigns
+-- Nvimtree
+keymap("n", "<leader>ft", "<CMD>NvimTreeToggle<CR>", opts)
+-- Buffer
+keymap("n", "<leader>bd", "<CMD>Bdelete<CR>", opts)
+keymap("n", "<leader>bb", "<CMD>Telescope buffers<CR>", opts)
