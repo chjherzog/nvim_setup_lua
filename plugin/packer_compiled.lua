@@ -119,10 +119,20 @@ _G.packer_plugins = {
     path = "/home/chjherzog/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/chjherzog/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   neoterm = {
     loaded = true,
     path = "/home/chjherzog/.local/share/nvim/site/pack/packer/start/neoterm",
     url = "https://github.com/kassio/neoterm"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/chjherzog/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -188,11 +198,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/chjherzog/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
-  },
-  ["telescope-media-files.nvim"] = {
-    loaded = true,
-    path = "/home/chjherzog/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim",
-    url = "https://github.com/nvim-telescope/telescope-media-files.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
