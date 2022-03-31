@@ -49,6 +49,13 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs"
   -- Comments
   use "numToStr/Comment.nvim"
+  -- NVimTree
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
+  use "nvim-lualine/lualine.nvim"
+  use "kassio/neoterm"
   -- Colorscheme
   use "navarasu/onedark.nvim"
   -- cmp plugins
@@ -63,11 +70,11 @@ return packer.startup(function(use)
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
   -- LSP 
   use "neovim/nvim-lspconfig" -- enable LSP
+  use "williamboman/nvim-lsp-installer"
+  use "jose-elias-alvarez/null-ls.nvim"-- formatters and linters
   -- Telescope
   use "nvim-telescope/telescope.nvim"
-  use 'nvim-telescope/telescope-media-files.nvim' use "williamboman/nvim-lsp-installer" -- Helper for installer
-  -- Neoterm
-  use 'kassio/neoterm'
+  -- use 'nvim-telescope/telescope-media-files.nvim' 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   -- Treesitter
@@ -77,11 +84,6 @@ return packer.startup(function(use)
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
   use "p00f/nvim-ts-rainbow"
-  -- NVimTree
-  use 'kyazdani42/nvim-web-devicons'
-  use 'kyazdani42/nvim-tree.lua'
-  use "akinsho/bufferline.nvim"
-  use "moll/vim-bbye"
   -- Gitsigns
   use "lewis6991/gitsigns.nvim"
   if PACKER_BOOTSTRAP then

@@ -39,6 +39,7 @@ keymap("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
+-- Bufferline
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
@@ -49,9 +50,9 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Spacemacs Muscle Memory
--- Press SPC f s
 keymap("n", "<leader>fs", ":w!<CR>", opts)
 keymap("n", "<leader>qq", ":q!<CR>", opts)
+keymap("n", "<leader>fed", ":cd ~/.config/nvim/ | Telescope find_files<CR>", opts)
 
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
@@ -75,7 +76,7 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- NeoTerm
 keymap("n", ",,", ":TREPLSendLine<CR>", opts)
 keymap("v", ",,", ":TREPLSendSelection<CR>", opts)
-keymap("n", "<leader>tt", ":Ttoggle<CR>", opts)
+keymap("n", "<leader>tt", ":Tnew<CR>",opts)
 
 -- Telescope
 keymap("n", "<leader>ff", "<CMD>Telescope find_files<CR>", opts)
@@ -87,5 +88,9 @@ keymap("n", "<leader>gb", "<CMD>Telescope git_branches<CR>", opts)
 -- Nvimtree
 keymap("n", "<leader>ft", "<CMD>NvimTreeToggle<CR>", opts)
 -- Buffer
-keymap("n", "<leader>bd", "<CMD>Bdelete<CR>", opts)
+keymap("n", "<leader>bd", "<CMD>Bdelete!<CR>", opts)
 keymap("n", "<leader>bb", "<CMD>Telescope buffers<CR>", opts)
+-- Move to folder of current file
+keymap("n", "<leader>bf", "<CMD>:cd %:p:h<CR>", opts)
+-- Nulls-ls
+keymap("n", "<leader>fe", ":lua vim.lsp.buf.formatting()<CR>", opts)
