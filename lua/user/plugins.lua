@@ -45,10 +45,13 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+
   -- Autopairs
   use "windwp/nvim-autopairs"
+
   -- Comments
   use "numToStr/Comment.nvim"
+
   -- NVimTree
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
@@ -56,8 +59,10 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use "kassio/neoterm"
+
   -- Colorscheme
   use "navarasu/onedark.nvim"
+  
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -65,13 +70,18 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
+
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
   -- LSP 
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer"
+  use "tamago324/nlsp-settings.nvim"
+
   use "jose-elias-alvarez/null-ls.nvim"-- formatters and linters
+
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   -- use 'nvim-telescope/telescope-media-files.nvim' 
@@ -86,6 +96,17 @@ return packer.startup(function(use)
   use "p00f/nvim-ts-rainbow"
   -- Gitsigns
   use "lewis6991/gitsigns.nvim"
+  use "lewis6991/impatient.nvim"
+
+  -- Welcome greeting
+  use "goolord/alpha-nvim"
+
+  -- Indentline
+  use "lukas-reineke/indent-blankline.nvim" 
+
+  -- Project folder
+  use "ahmedkhalf/project.nvim"
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
