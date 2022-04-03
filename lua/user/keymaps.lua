@@ -51,7 +51,7 @@ keymap("v", ">", ">gv", opts)
 
 -- Spacemacs Muscle Memory
 keymap("n", "<leader>fs", ":w!<CR>", opts)
-keymap("n", "<leader>qq", ":q!<CR>", opts)
+keymap("n", "<leader>qq", ":qa!<CR>", opts)
 keymap("n", "<leader>fed", ":cd ~/.config/nvim/ | Telescope find_files<CR>", opts)
 
 -- Move text up and down
@@ -82,6 +82,8 @@ keymap("n", "<leader>tt", ":Tnew<CR>",opts)
 keymap("n", "<leader>ff", "<CMD>Telescope find_files<CR>", opts)
 keymap("n", "<leader>ft", "<CMD>Telescope live_grep<CR>", opts)
 keymap("n", "<leader>fb", "<CMD>Telescope current_buffer_fuzzy_find<CR>", opts)
+keymap("n", "<leader>fp", "<CMD>Telescope projects<CR>", opts)
+keymap("n", "<leader>fr", "<CMD>Telescope oldfiles<CR>", opts)
 keymap("n", "<leader>gb", "<CMD>Telescope git_branches<CR>", opts)
 
 -- Gitsigns
