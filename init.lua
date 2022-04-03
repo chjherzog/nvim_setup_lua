@@ -12,4 +12,6 @@ require "user.gitsigns"
 require "user.nvim_tree"
 require "user.bufferline"
 require "user.lualine"
-
+require "user.project"
+require "user.alpha"
+require "user.indentline"
